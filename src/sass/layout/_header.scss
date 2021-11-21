@@ -1,0 +1,51 @@
+@use "base/variables" as v;
+
+.header {
+  display: flex;
+  align-items: center;
+  padding: 2.4rem 0;
+}
+
+.header-navigation {
+  flex-grow: 1;
+  margin-left: 4rem;
+}
+
+.header-items {
+  display: flex;
+  align-items: center;
+}
+
+.header-item {
+  margin-right: 4rem;
+  &:nth-of-type(5) {
+    margin-right: 0;
+  }
+}
+
+.header-item-link {
+  color: rgba(0, 0, 0, 0.6);
+  transition: 0.2s;
+  &:hover {
+    color: black;
+  }
+  &.active {
+    color: black;
+  }
+}
+
+.header-button {
+  .btn {
+    background: linear-gradient(
+      270deg,
+      #faa245 0%,
+      #d8328a 37.25%,
+      #753872 100%
+    );
+    border: none;
+    padding: 1.5rem 3.6rem;
+    border-radius: 5rem;
+    color: white;
+    cursor: pointer;
+  }
+}

@@ -1,0 +1,49 @@
+@use "base/variables" as v;
+
+.main {
+  display: flex;
+  align-items: center;
+  flex: auto;
+}
+
+.section-info {
+  flex: 1;
+}
+
+.section-info-title {
+  font-size: 5.2rem;
+  font-weight: 500;
+}
+
+.section-info-text {
+  color: #828282;
+  margin-top: 3.2rem;
+  margin-bottom: 4rem;
+  line-height: 2;
+}
+
+.main-button {
+  border: 1px solid #e2e2e2;
+  background-color: transparent;
+  padding: 1.5rem 3.6rem;
+  border-radius: 5rem;
+  font-weight: 500;
+
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+
+  background: v.$linear-gradient;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+
+  cursor: pointer;
+
+  & > .btn-icon {
+    font-size: 2rem;
+  }
+}
+
+.section-image {
+  flex: 1;
+}

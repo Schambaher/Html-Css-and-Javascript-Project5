@@ -1,0 +1,23 @@
+@use "base/variables" as v;
+
+.footer {
+  display: flex;
+  gap: 5rem;
+  padding: 3rem 0;
+}
+
+.footer-list-social {
+  display: flex;
+  gap: 2rem;
+}
+
+.footer-list-item,
+.footer-dev {
+  color: #bdbdbd;
+  transition: 0.2s;
+  cursor: pointer;
+
+  &:hover {
+    color: black;
+  }
+}
